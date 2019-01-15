@@ -1,0 +1,266 @@
+@import 'reset';
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 1460px;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 93.8vw;
+  position: relative;
+  z-index: 4;
+  padding-top: 47px;
+  display: flex;
+}
+.wrapper{
+  min-width: 100%;
+  display: flex;
+}
+
+.home {
+  background: #59b9e7;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/house.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 100%;
+
+  &-logo {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    left: 0;
+    top: 0;
+  }
+  &-left{
+    width: 215px;
+  }
+
+  .home-left {
+    height: 100%;
+    min-width: 300px;
+  }
+
+  &-logo2 {
+    padding-left: 2px;
+  }
+
+  &-menu {
+    margin-top: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  li{
+    position: relative;
+    overflow: hidden;
+    height: 14px;
+    transition: 0.3s;
+    &:hover a{
+      margin-left: 5px;
+      color: #EA641E;
+    }
+    &:hover .home-hover{
+      left:1.5%;
+    }
+  }
+  .home-hover{
+    width: 40px;
+    height:14px;
+    position: absolute;
+    top: 0;
+    left:-14%;
+    border-bottom: 1px solid white;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  a{
+    transition: 0.3s;
+  }
+  &-years{
+    color: white;
+    font-size: 13px;
+    transform: rotate(-90deg);
+    margin-top: 60%;
+    margin-left: -280px;
+    letter-spacing: 1.7px;
+    position: relative;
+  }
+  &-header{
+    display: flex;
+  }
+  &-info{
+    color: white;
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1.15px;
+    flex-shrink: 0;
+    
+  }
+  &-right{
+    padding-left: 87px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  &-address{
+    padding-right: 20px;
+  }
+  &-contact{
+    padding-left: 17px;
+    border-left: 1px solid white;
+    height: 15px;
+  }
+  &-language{
+    
+    margin-left: 30vw;
+    @media (max-width:1800px) {
+      margin-left: 16vw;
+    }
+    a{
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  }
+  &-rus{
+    margin-left: 78px;
+    color: #acddf3;
+    position: relative;
+  }
+  &-rus::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    border-bottom: 1px solid #acddf3;
+    top: -2%;
+    left: -200%;
+  }
+  &__button{
+    text-transform: uppercase;
+    border: 1px solid #b1d9ef;
+    background:transparent;
+    height: 50px;
+    width: 202px;
+    color: white;
+    border-radius: 98px;
+    font-size: 12.2px;
+    letter-spacing: 3px;
+    &:hover::before{
+      width: 100%;
+      left: 0;
+    }
+  }
+  &__button--container{
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: -18px;
+    position: relative;
+    border-radius: 98px;
+  }
+  &__button::before{
+    content: "";
+    width: 0px;
+    background: #EA641E;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: 1s;
+    z-index: -1;
+  }
+  &__logan{
+    width: 520px;
+    text-transform: uppercase;
+    color:white;
+    font-size: 67px;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  &__text{
+    width: 370px;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    height: 50px;
+  }
+  &__contant{
+    display: flex;
+    padding-top: 95px;
+    padding-right: 340px;
+  }
+  &__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-left: 150px;
+    width: 6
+  }
+  &__img{
+    position: absolute;
+    top: 133%;
+    left: 4%;
+  }
+  &__call{
+    text-transform: uppercase;
+    border: 1px solid #b1d9ef;
+    background:#e76d1a;
+    height: 50px;
+    width: 253px;
+    color: white;
+    border-radius: 98px;
+    font-size: 12.2px;
+    letter-spacing: 3px;
+    transition: 0.4s;
+    &:hover{
+      background:#58BAE7 ;
+
+    }
+  }
+}
+.animation{
+  background: #59b9e7;
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+  }
+}
+
+.animation-up{
+  animation-name: animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes animation{
+  from{
+    top:0;
+  }
+  to{
+    top:100%;
+  }
+}
+
+
