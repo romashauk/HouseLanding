@@ -16,6 +16,7 @@ a{
 .container {
   margin: 0 auto;
   max-width: 93.8vw;
+  min-width: 1400px;
   position: relative;
   z-index: 4;
   padding-top: 47px;
@@ -28,8 +29,8 @@ a{
 
 .home {
   background: #59b9e7;
-  width: 100vw;
-  min-height: 100vh;
+  height:100vh;
+  min-height: 700px;
   position: relative;
   overflow: hidden;
   background-image: url(../img/house.png);
@@ -97,7 +98,7 @@ a{
     color: white;
     font-size: 13px;
     transform: rotate(-90deg);
-    margin-top: 60%;
+    margin-top: 0vw;
     margin-left: -280px;
     letter-spacing: 1.7px;
     position: relative;
@@ -235,8 +236,8 @@ a{
 }
 .animation{
   background: #59b9e7;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 10;
   display: flex;
