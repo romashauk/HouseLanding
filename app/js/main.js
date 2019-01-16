@@ -1,10 +1,39 @@
-let animation = document.querySelector(".animation");
-console.log(animation)
+let animation = document.querySelector(".home");
+let logan = document.querySelector(".mixed__logan");
+
 let beforeLoad=()=>{
-  animation.classList = " animation animation-up";
+  animation.classList = "home animation-up";
 }
 let afterLoad=()=>{
-  animation.style.display ="none";
+  animation.style.opacity="1";
 }
 setTimeout(beforeLoad,2000)
-setTimeout(afterLoad,6000)
+setTimeout(afterLoad,4000)
+
+mySlider = $('.slick__slider')
+mySlider.slick({
+  infinite: true,
+  slidesToShow: 1,
+  vertical:true,
+  arrows:false,
+  speed:1500,
+  slidesToShow:1,
+});
+$('.home').bind('mousewheel',function(e){
+  console.log(e.deltaY)
+  if (e.deltaY < 0) {
+    mySlider.slick('slickNext');
+  } else {
+    mySlider.slick('slickPrev');
+  }
+})
+$('.home').bind('ontouchstart',function(){
+  mySlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    vertical:true,
+    arrows:false,
+    speed:1500,
+    slidesToShow:1,
+  });
+})

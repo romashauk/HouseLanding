@@ -7,51 +7,85 @@ html(lang="en")
     title House Lending
     link(rel="stylesheet", href="css/main.css")
     script(src="js/main.js" defer)
+    link(rel="stylesheet", href="slick/slick/slick.css")
+    link(rel="stylesheet", href="slick/slick/slick-theme.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.6.3/css/all.css",integrity="ha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/", crossing="anonymous")
   body#body
-    .home
-      .animation
-        h1 Hello, World!
-      .container
-        .home-left
-          img(src="img/logo.png", alt="",class="home-logo2")
-          ul.home-menu
-            li
-              a(href="#") Квартиры
-              .home-hover
-            li
-              a(href="#") о нас 
-              .home-hover
-            li
-              a(href="#") галерея
-              .home-hover
-            li
-              a(href="#") инфраструктура
-              .home-hover
-            li
-              a(href="#") новoсти
-              .home-hover
-            li
-              a(href="#") Контакты
-              .home-hover
-          .home-years &#169 2017-2018 EvroMisto
-          img.home__img(src="img/footer-logo.png", alt="")
-        .home-right
-          .home-header
-            .home-info
-              p.home-address 08136 г.Киев Крюковщина, ул. Жулянская 1А
-              p.home-contact 044 290 35 50
-            .wrapper
-              .home-language
-                a(href="#") УКР.
-                a(href="#" class="home-rus") РУС.
-              .home__button--container
-                button.home__button Заказать звонок
-          .home__contant
-            h1.home__logan Ты должен это увидeть! плати 50% <br> и заселяйся
-            div.home__wrap
-              p.home__text Не траться на дизайнера - получи  готовый дизайн-проект в подарок
-              button.home__call Посмотреть Квартиры
+    .mixed
+      h1.mixed__logan Hello, Roma
+      .home
+        .container
+          .home-left
+            img(src="img/logo.png", alt="",class="home-logo2")
+            ul.home-menu
+              li
+                a(href="#") Квартиры
+                .home-hover
+              li
+                a(href="#") о нас 
+                .home-hover
+              li
+                a(href="#") галерея
+                .home-hover
+              li
+                a(href="#") инфраструктура
+                .home-hover
+              li
+                a(href="#") новoсти
+                .home-hover
+              li
+                a(href="#") Контакты
+                .home-hover
+            .home-years &#169 2017-2018 EvroMisto
+            img.home__img(src="img/footer-logo.png", alt="")
+          .home-right
+            .home-header
+              .home-info
+                p.home-address 08136 г.Киев Крюковщина, ул. Жулянская 1А
+                p.home-contact 044 290 35 50
+              .wrapper
+                .home-language
+                  a(href="#") УКР.
+                  a(href="#" class="home-rus") РУС.
+                .home__button--container
+                  button.home__button Заказать звонок
+            .home__contant
+              div.slick 
+                .slick__slider
+                  h1.slick__slider--text ты должен 
+                  h1.slick__slider--contact.great
+                    a(href="#") be in touch
+                  p.slick__slider--about Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel doloribus, dolor nihil, labore corporis nesciunt recusandae nulla cum, harum est repellendus tempore ipsa praesentium rerum pariatur sapiente quidem aliquam.
 
+                .slick__slider
+                  h1.slick__slider--text Это увидить
+                  h1.slick__slider--contact 
+                    a(href="#") 
+                      div Instagram
+                      i.fas.fa-external-link-square-alt
+                  p.hidden 1
+                .slick__slider
+                  h1.slick__slider--text плати 50% 
+                  h1.slick__slider--contact 
+                    a(href="#") 
+                      div facebook
+                      i.fas.fa-external-link-square-alt
+                  p.hidden 1
+                .slick__slider
+                  h1.slick__slider--text и заселяйся 
+                  h1.slick__slider--contact 
+                    a(href="#") 
+                      div twitter
+                      i.fas.fa-external-link-square-alt
+                  p.hidden 1
+              div.home__wrap
+                p.home__text Не траться на дизайнера - получи  готовый дизайн-проект в подарок
+                button.home__call Посмотреть Квартиры
+            
+    script(src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(src="slick/slick/slick.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js")
 
           
 

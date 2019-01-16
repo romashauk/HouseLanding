@@ -216,6 +216,9 @@ a{
     position: absolute;
     top: 133%;
     left: 4%;
+    @media (max-height:854px){
+      top: 100%;
+    }
   }
   &__call{
     text-transform: uppercase;
@@ -240,7 +243,7 @@ a{
   height: 100%;
   position: absolute;
   z-index: 10;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   h1{
@@ -253,15 +256,85 @@ a{
 .animation-up{
   animation-name: animation;
   animation-duration: 3s;
-  animation-fill-mode: forwards;
 }
 @keyframes animation{
   from{
-    top:0;
+    opacity: 0;
   }
   to{
-    top:100%;
+    opacity: 1;
   }
 }
+.slick{
+  top: 0;
+  &__slider{
+    width: 500px;
+    &--text{
+      text-transform: uppercase;
+      color:black;
+      font-size: 67px;
+      font-weight: bold;
+      display: flex;
+      overflow: hidden;
+    }
+    &--contact a{
+      text-transform: uppercase;
+      color: red;
+      font-size: 50px;
+      overflow: hidden;
+      font-weight: bold;
+      display: flex;
+      i{
+        font-size: 30px;
+        color: black;
+        transition: 0.5s;
+        &:hover{
+          color: white;
+        }
+      }
+
+    }
+    &--about{
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      overflow: hidden;
+      font-weight: bold;
+    }
+  }
+  .great a{
+    font-size: 70px;
+  }
+}
+a div{
+  width: 400px;
+}
+.hidden{
+  opacity: 0;
+}
+.mixed{
+  background: #59b9e7;
+  height:100vh;
+  min-height: 700px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .home{
+    opacity: 0;
+    width: 100%;
+  }
+  &__logan{
+    position: absolute;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+
 
 
