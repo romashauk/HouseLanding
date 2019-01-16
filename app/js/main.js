@@ -27,7 +27,7 @@ $('.home').bind('mousewheel',function(e){
     mySlider.slick('slickPrev');
   }
 })
-$('.home').bind('ontouchstart',function(){
+$('.home').bind('touchstart',function(){
   mySlider.slick({
     infinite: true,
     slidesToShow: 1,
