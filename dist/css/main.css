@@ -587,7 +587,8 @@ a div {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 100; }
   .mixed .home {
     opacity: 0;
     width: 100%; }
@@ -597,11 +598,33 @@ a div {
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    font-weight: bolder; }
-  @media (max-width: 1800px) {
+    font-weight: bolder;
+    display: flex; }
+
+.number {
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 30px; }
+  .number p {
+    position: relative;
+    font-size: 40px; }
+
+.animators {
+  animation: mymove;
+  animation-duration: 3s; }
+
+@keyframes mymove {
+  from {
+    top: -100%; }
+  to {
+    top: -900%; } }
+
+@media (max-width: 1800px) {
       .home-language {
         margin-left: 16vw; } }
-  @media (max-height: 854px) {
+
+@media (max-height: 854px) {
       .home__img {
         top: 100%; } }
 

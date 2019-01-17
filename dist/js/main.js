@@ -1,5 +1,5 @@
 let animation = document.querySelector(".home");
-let logan = document.querySelector(".mixed__logan");
+const logan = document.querySelector(".mixed__logan");
 
 let beforeLoad=()=>{
   animation.classList = "home animation-up";
@@ -8,7 +8,8 @@ let afterLoad=()=>{
   animation.style.opacity="1";
 }
 setTimeout(beforeLoad,2000)
-setTimeout(afterLoad,4000)
+setTimeout(afterLoad,4000);
+
 
 mySlider = $('.slick__slider')
 mySlider.slick({
@@ -27,7 +28,7 @@ $('.home').bind('mousewheel',function(e){
     mySlider.slick('slickPrev');
   }
 })
-$('.home').bind('touchstart',function(){
+$('.home').on('touchstart',function(){
   mySlider.slick({
     infinite: true,
     slidesToShow: 1,

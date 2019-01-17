@@ -321,6 +321,7 @@ a div{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
   .home{
     opacity: 0;
     width: 100%;
@@ -332,9 +333,25 @@ a div{
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-weight: bolder;
+    display: flex;
   }
 }
+.number{
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 30px;
+  p{
+    position: relative;
+    font-size: 40px;
+  }
+}
+.animators{
+  animation: mymove;
+  animation-duration: 3s;
+}
 
-
-
-
+@keyframes mymove {
+  from {top: -100%;}
+  to {top:-900%;}
+}
