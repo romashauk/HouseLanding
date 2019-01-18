@@ -27,7 +27,7 @@ $('.home').bind('mousewheel',function(e){
     mySlider.slick('slickPrev');
   }
 })
-$('.home-right').on('touchstart',function(){
+$('.slick').on('touchstart',function(){
   mySlider.slick('slickNext')
 })
 $('.home__menu--button').on('click',function(){
