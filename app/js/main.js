@@ -27,8 +27,8 @@ $('.home').bind('mousewheel',function(e){
     mySlider.slick('slickPrev');
   }
 })
-$('.container').on('touchstart',function(){
-  alert('sdsd')
+$('.home-right').on('touchstart',function(){
+  mySlider.slick('slickNext')
 })
 $('.home__menu--button').on('click',function(){
   $(this).toggleClass('button--active');

@@ -58,6 +58,10 @@ a{
     top: 4%;
     left: 3%;
     z-index: 101;
+    display: none;
+    @media (max-width:900px) {
+      display: block;
+    }
   }
   .button--active .home__menu--item::before {
     transform: rotate(40deg);
@@ -172,10 +176,18 @@ a{
     margin-left: -280px;
     letter-spacing: 1.7px;
     position: relative;
+    @media (max-width:900px) {
+      margin-left: 0px;
+      margin-top: 50px;
+      text-align: center;
+      transform: rotate(0)
+    }
   }
   &-header{
     display: flex;
-    flex-wrap: wrap;
+    @media (max-width:900px) {
+      flex-wrap: wrap;
+    }
   }
   &-info{
     color: white;
@@ -210,7 +222,6 @@ a{
     height: 15px;
   }
   &-language{
-    
     margin-left: 30vw;
     @media (max-width:1800px) {
       margin-left: 16vw;
@@ -432,8 +443,7 @@ a div{
   z-index: 100;
   @media (max-width:900px) {
     min-height: auto;
-    width: auto;
-    overflow: auto;
+    width: 100%;
   }
   .home{
     opacity: 0;
@@ -447,7 +457,7 @@ a div{
     color: white;
     font-weight: bolder;
     display: flex;
-    @media (max-width:600px) {
+    @media (max-width:900px) {
       font-size: 40px;
     }
   }
