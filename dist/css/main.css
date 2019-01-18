@@ -365,7 +365,9 @@ a {
     top: 4%;
     left: 3%;
     z-index: 101;
-    display: none; }
+    display: none;
+    width: 70px;
+    height: 70px; }
   .home .button--active .home__menu--item::before {
     transform: rotate(40deg); }
   .home .button--active .home__menu--item::after {
