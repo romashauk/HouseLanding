@@ -11,7 +11,7 @@ setTimeout(beforeLoad,2000)
 setTimeout(afterLoad,4000);
 
 
-mySlider = $('.slick__slider')
+const mySlider = $('.slick__slider')
 mySlider.slick({
   infinite: true,
   slidesToShow: 1,
@@ -21,20 +21,16 @@ mySlider.slick({
   slidesToShow:1,
 });
 $('.home').bind('mousewheel',function(e){
-  console.log(e.deltaY)
   if (e.deltaY < 0) {
     mySlider.slick('slickNext');
   } else {
     mySlider.slick('slickPrev');
   }
 })
-$('.home').on('touchstart',function(){
-  mySlider.slick({
-    infinite: true,
-    slidesToShow: 1,
-    vertical:true,
-    arrows:false,
-    speed:1500,
-    slidesToShow:1,
-  });
+$('.container').on('touchstart',function(){
+  alert('sdsd')
+})
+$('.home__menu--button').on('click',function(){
+  $(this).toggleClass('button--active');
+  $('.home-left').toggle('slow');
 })
