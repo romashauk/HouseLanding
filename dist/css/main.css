@@ -627,24 +627,9 @@ a div {
     font-weight: bolder;
     display: flex; }
 
-.number {
-  height: 40px;
-  overflow: hidden;
+.mixed__logan p {
   position: relative;
-  margin-left: 30px; }
-  .number p {
-    position: relative;
-    font-size: 40px; }
-
-.animators {
-  animation: mymove;
-  animation-duration: 2s; }
-
-@keyframes mymove {
-  from {
-    top: -100%; }
-  to {
-    top: -900%; } }
+  font-size: 40px; }
 
 @media (max-width: 1800px) {
       .home-language {
@@ -719,7 +704,7 @@ a div {
       min-height: auto;
       width: 100%; }
       .mixed__logan {
-        font-size: 40px; } }
+        font-size: 60px; } }
 
 @media (max-height: 854px) {
       .home__img {

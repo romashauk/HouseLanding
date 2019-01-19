@@ -460,26 +460,12 @@ a div{
     font-weight: bolder;
     display: flex;
     @media (max-width:900px) {
-      font-size: 40px;
+      font-size: 60px;
     }
   }
 }
-.number{
-  height: 40px;
-  overflow: hidden;
-  position: relative;
-  margin-left: 30px;
-  p{
-    position: relative;
-    font-size: 40px;
-  }
-}
-.animators{
-  animation: mymove;
-  animation-duration: 2s;
-}
 
-@keyframes mymove {
-  from {top: -100%;}
-  to {top:-900%;}
-}
+.mixed__logan p{
+  position: relative;
+  font-size: 40px;
+ }
